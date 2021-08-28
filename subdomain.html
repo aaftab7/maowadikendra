@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Maowadikendra.com</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="maowadikendra" name="keywords">
+    <meta content="maowadikendra" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="mycollection/font/flaticon.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Brand Start -->
+    <div class="brand">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-4">
+                    <div class="b-logo">
+                        <a href="index.html">
+                            <img src="img/CPNMC.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-8">
+                    <div class="top-right ml-auto">
+                        <a href="#" class="btn-top active">English</a>
+                        <a href="#" class="btn-top">Nepali</a>
+                        <a href="#"><i class="fa fa-user-circle"> म पनि माओवादि</i></a>
+                        <a href="#" class="btn-email">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brand End -->
+
+    <!-- Nav Bar Start -->
+    <div class="nav-bar">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">हाम्रो बारेमा </a>
+                            <div class="dropdown-menu">
+                                <a href="intro.html" class="dropdown-item"> परिचय </a>
+                                <a href="central.html" class="dropdown-item">  केन्द्रीय कार्य समिति </a>
+                                <a href="central1.html" class="dropdown-item">  केन्द्रिय कार्यालय  </a>
+                            </div>
+                        </div>
+                        <a href="subdomain.html" class="nav-item nav-link"> संगठन </a>
+                        <div class="nav-item dropdown">
+                            <a href="subdomain.html" class="nav-link dropdown-toggle" data-toggle="dropdown">  बिधान 
+                                </a>
+                            <div class="dropdown-menu">
+                                <a href="rule.html" class="dropdown-item">  नेपालको संबिधान   </a>
+                                <a href="prule.html" class="dropdown-item"> पार्टी विधान  </a>
+                                <a href="brule.html" class="dropdown-item"> विधान   </a>
+                            </div>
+                        </div>
+
+                        <a href="document.html" class="nav-item nav-link">  दस्ताबेज</a>
+                        <a href="circular.html" class="nav-item nav-link"> परिपत्र </a>
+                        <a href="online.html" class="nav-item nav-link">  सक्रिय सदस्यता </a>
+                        <a href="inform.html" class="nav-item nav-link">   सुचना केन्द्र </a>
+                        <a href="online.html" class="nav-item nav-link"> ई-लाइब्रेरी</a>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+    <style>
+        #main_content {
+            margin-top: 50px;
+            width: 100%;
+        }
+        
+        #main_content li {
+            display: inline;
+            list-style-type: none;
+            background: #b2b3b1;
+            padding: 10px;
+            border-radius: 5px 5px 0px 0px;
+            color: red;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        #main_content li.notselected {
+            background-color: #b3b4ae69;
+            color: red;
+        }
+        
+        #main_content li.selected {
+            background-color: #e0e2de;
+            color: #292A0A;
+        }
+        
+        #main_content .hidden_desc {
+            display: none;
+            visibility: hidden;
+        }
+        
+        #main_content #page_content {
+            background-color: #d9dad8;
+            padding: 10px;
+            margin-top: 9px;
+            border-radius: 0px 5px 5px 5px;
+            color: #2E2E2E;
+            line-height: 1.6em;
+            word-spacing: 4px;
+        }
+    </style>
+
+
+    <section>
+        <div class="header-intro text-center">
+            <h5>संगठन
+            </h5>
+            <p><a href="index.html">गृहपृष्ठ </a>| संगठन</p>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid mt-5">
+            <div class="tabset">
+                <input type="radio" name="tabset" id="tab1" aria-controls="jilla" checked>
+                <label for="tab1">जिल्ला कार्यसमितिहरु</label>
+                <input type="radio" name="tabset" id="tab2" aria-controls="vatri">
+                <label for="tab2">ज.व.स.मोर्चा</label>
+                <input type="radio" name="tabset" id="tab3" aria-controls="suvekxu">
+                <label for="tab3">शुभेच्छुक संस्थाहरु</label>
+                <input type="radio" name="tabset" id="nepali" aria-controls="nepali">
+                <label for="nepali">प्रवास / अन्तर्राष्ट्रिय विभाग</label>
+                <input type="radio" name="tabset" id="kendriya" aria-controls="kendriya">
+                <label for="kendriya">केन्द्रीय नीति, अनुसन्धान तथा प्रशिक्षण प्रतिष्ठान</label>
+                <input type="radio" name="tabset" id="nirwachan" aria-controls="nirwachan">
+                <label for="nirwachan">केन्द्रीय निर्वाचन समिति</label>
+                <input type="radio" name="tabset" id="sansadiya" aria-controls="sansadiya">
+                <label for="sansadiya">संघीय संसदीय दल</label>
+                <input type="radio" name="tabset" id="pradesh" aria-controls="pradesh">
+                <label for="pradesh">प्रदेश सभा संसदीय दलहरु</label>
+
+
+                <div class="tab-panels">
+                    <section id="jilla" class="tab-panel">
+                        <div class="container-fluid">
+                            <div id="main_content">
+
+                                <li class="selected" id="page1" onclick="change_tab(this.id);">प्रदेश नं. १</li>
+                                <li class="notselected" id="page2" onclick="change_tab(this.id);">प्रदेश नं. २</li>
+                                <li class="notselected" id="page3" onclick="change_tab(this.id);">बागमती प्रदेश</li>
+                                <li class="notselected" id="page4" onclick="change_tab(this.id);">गण्डकी प्रदेश</li>
+                                <li class="notselected" id="page5" onclick="change_tab(this.id);">लुम्बिनी प्रदेश</li>
+                                <li class="notselected" id="page6" onclick="change_tab(this.id);">कर्णाली प्रदेश</li>
+                                <li class="notselected" id="page7" onclick="change_tab(this.id);">सुदूरपश्चिम प्रदेश</li>
+
+                                <div class='hidden_desc' id="page1_desc">
+                                    <div class="container-fluid">
+                                        <div class="container-fluid">
+                                            <div class="row">
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">ताप्लेजुङ</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">पाँचथर</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">ईलाम</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">झापा</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">मोरङ</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">सुनसरी </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">धनकुटा </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">तेह्रथुम </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">संखुवासभा </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">भोजपुर </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">खोटाङ </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">सोलुखुम्बु </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">ओखलढुङ्गा </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">उदयपुर </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">विराटनगर महानगरपालिका </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class='hidden_desc' id="page2_desc">
+                                    <div class="container-fluid">
+                                        <div class="container-fluid">
+                                            <div class="row">
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">सप्तरी </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">सिराहा </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">धनुषा </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">महोत्तरी </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">सर्लाही </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">रौतहट </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">बारा </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">पर्सा </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">वीरगञ्ज महानगरपालिका </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class='hidden_desc' id="page3_desc">
+                                    <div class="container-fluid">
+                                        <div class="container-fluid">
+                                            <div class="row">
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">चितवन </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">मकवानपुर </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">धादिङ </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">नुवाकोट </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">रसुवा </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">सिन्धुपाल्चोक </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">दोलखा </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">रामेछाप</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">सिन्धुली </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">काभ्रेपलाञ्चोक </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">भक्तपुर </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">ललितपुर </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">काठमाडौं </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">भरतपुर महानगरपालिका</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">ललितपुर महानगरपालिका </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">काठमाडौं महानगरपालिका </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class='hidden_desc' id="page4_desc">
+                                    <div class="container-fluid">
+                                        <div class="container-fluid">
+                                            <div class="row">
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">गोरखा </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">तनहुँ</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">लमजुङ </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">स्याङ्जा </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">कास्की </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">मनाङ </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class='hidden_desc' id="page5_desc">
+                                    <div class="container-fluid">
+                                        <div class="container-fluid">
+                                            <div class="row">
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">बुटवल </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">गुलरिया</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">सिद्धार्थनगर </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">सितगङ्गा </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">तानसेन </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">तुल्सीपुर </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">नेपालगंज </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class='hidden_desc' id="page6_desc">
+                                    <div class="container-fluid">
+                                        <div class="container-fluid">
+                                            <div class="row">
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">डोल्पा </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">मुगु </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">हुम्ला </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">जुम्ला </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">कालिकोट </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">जाजरकोट </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">दैलेख </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">सूर्खेत </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">सल्यान </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">रुकुम पश्चिम </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class='hidden_desc' id="page7_desc">
+                                    <div class="container-fluid">
+                                        <div class="container-fluid">
+                                            <div class="row">
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">दार्चुला </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">बैतडी </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">डडेलधुरा </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">कञ्चनपुर </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">कैलाली </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">डोटी </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">अछाम </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">बझाङ </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="pagecontents">
+                                                        <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                        <div class="centered">बाजुरा </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="page_content">
+                                    <div class="container-fluid">
+                                        <div class="row">
+
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="pagecontents">
+                                                    <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                    <div class="centered">ताप्लेजुङ</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="pagecontents">
+                                                    <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                    <div class="centered">पाँचथर</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="pagecontents">
+                                                    <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                    <div class="centered">ईलाम</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="pagecontents">
+                                                    <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                    <div class="centered">झापा</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="pagecontents">
+                                                    <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                    <div class="centered">मोरङ</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="pagecontents">
+                                                    <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                    <div class="centered">सुनसरी </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="pagecontents">
+                                                    <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                    <div class="centered">धनकुटा </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="pagecontents">
+                                                    <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                                    <div class="centered">तेह्रथुम </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                    <section id="vatri" class="tab-panel">
+                        <div class="container-fluid">
+                            <div class="container-fluid">
+                                <div class="row">
+
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">ट्रेड युनियन महासंघ नेपाल र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">अखिल नेपाल किसान महासंघ र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">अखिल नेपाल महिला संघ र सम्बद्ध संगठनहरू</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">राष्ट्रिय युवा संघ नेपाल र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">अखिल नेपाल राष्ट्रिय स्वतन्त्र विद्यार्थी यूनियन र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">जनसाँस्कृतिक महासंघ नेपाल र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">आदिवासी जनजाति महासंघ नेपाल र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">नेपाल मुस्लिम संगठन र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">पेशागत महासंघ नेपाल र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">नेपाल उद्योग–व्यवसायी महासंघ र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">नेपाल भूतपूर्व सैनिक तथा प्रहरी संगठन र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">प्रेस संगठन नेपाल र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">मानव अधिकार तथा सामाजिक अभियान नेपाल र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">खेलकुद महासंघ नेपाल र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">नेपाल कानुन व्यवसायी संगठन र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">नेपाल भूमिहीन सुकुम्बासी संगठन र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">अपाङ्गता संगठन नेपाल र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">प्रोगेसिभ इन्जिनियरिङ एशोसिएसन नेपाल र सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">२१ शिक्षक सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">२२ प्राध्यापक सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">स्वास्थ्य सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered"> विपत व्यवस्थापन सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">वैदेशिक रोजगार सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">सहकारी सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">उपभोक्ताहित सम्बद्ध संगठनहरू </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="suvekxu" class="tab-panel">
+                        <div class="container-fluid">
+                            <div class="container-fluid">
+                                <div class="row">
+
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">१ नं. प्रदेश सम्पर्क समिति</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">२ नं. प्रदेश सम्पर्क समिति</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">बाग्मती प्रदेश सम्पर्क समिति</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">गण्डकी प्रदेश सम्पर्क समिति</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">लुम्बिनी प्रदेश सम्पर्क समिति</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">कर्णाली प्रदेश सम्पर्क समिति </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="pagecontents">
+                                            <img src="img/CPNMC.jpg" alt="image" class="img-fluid">
+                                            <div class="centered">सुदुरपश्चिम प्रदेश सम्पर्क समिति </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="nepali" class="tab-panel">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> चाईना</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> सउदि अरब</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> अरब ईमिरेट</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> अरब ईमिरेट</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> अमेरिका</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> अफ्रिका</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> भारत</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> बहराइन</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> बहराइन</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> बहराइन</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> बहराइन</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> बहराइन</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> बहराइन</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="kendriya" class="tab-panel">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> केन्द्रीय नीति, अनुसन्धान तथा प्रशिक्षण प्रतिष्ठान</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="nirwachan" class="tab-panel">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> केन्द्रीय निर्वाचन समिति</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="sansadiya" class="tab-panel">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> केन्द्रीय निर्वाचन समिति</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="pradesh" class="tab-panel">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="nepalibtn text-center">
+                                        <a href="#" class="btn btn-block"> केन्द्रीय निर्वाचन समिति</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="footer">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4 class="link--metis"> माओवादी केन्द्रीय कार्यालय</h4>
+                        <ul>
+                            <li>माओवादी भवन, बानेश्वर,काठमान्डौ, नेपाल</li>
+                            <li>माओवादी भवन, बानेश्वर,काठमान्डौ, नेपाल</li>
+                            <li>माओवादी भवन, बानेश्वर,काठमान्डौ, नेपाल</li>
+                            <li>माओवादी भवन, बानेश्वर,काठमान्डौ, नेपाल</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>क्वीक लिंक्स</h4>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> सूचना अधिकारी</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> सूचना अधिकारी</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>मिडिया</h4>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> भिडियो ग्यालरी</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> छवि ग्यालरी</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>माओवादी</h4>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> प्रेस विज्ञप्ती</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> माओवादीको कर्म</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i> ईमेल</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bot-footer text-center">
+            <p>Copyright © <a href="#">KTM soft</a>. All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- Back to Top -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        function change_tab(id) {
+            document.getElementById("page_content").innerHTML = document.getElementById(id + "_desc").innerHTML;
+            document.getElementById("page1").className = "notselected";
+            document.getElementById("page2").className = "notselected";
+            document.getElementById("page3").className = "notselected";
+            document.getElementById("page4").className = "notselected";
+            document.getElementById("page5").className = "notselected";
+            document.getElementById("page6").className = "notselected";
+            document.getElementById("page7").className = "notselected";
+            document.getElementById(id).className = "selected";
+        }
+    </script>
+</body>
+
+</html>
